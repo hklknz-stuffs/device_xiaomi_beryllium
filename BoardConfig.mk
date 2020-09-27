@@ -73,6 +73,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM_IAS=1
 TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/$(TARGET_KERNEL_CLANG_VERSION)-clang
 TARGET_KERNEL_CONFIG += vendor/xiaomi/mi845_defconfig vendor/xiaomi/beryllium.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
 
