@@ -23,3 +23,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys3/restart_level   u
 
 genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon/extcon3/cable.0/     u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon/extcon3/cable.1/     u:object_r:sysfs_extcon:s0
+
+# Kernelspace battery saver
+genfscon sysfs /module/battery_saver/parameters/enabled                        u:object_r:sysfs_battery_saver:s0
