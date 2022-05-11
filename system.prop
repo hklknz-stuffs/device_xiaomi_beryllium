@@ -15,6 +15,7 @@ persist.vendor.camera.perfcapture=1
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemuicompilerfilter=speed
 
 # Data modules
 persist.data.df.dev_name=rmnet_usb0
