@@ -959,4 +959,9 @@
     
     <!-- Whether to enable Lineage Health Service -->
     <bool name="config_lineageHealthSupported">true</bool>
+    
+     <!-- Allow more cached apps in the background -->
+    <string-array name="configs_setCachedAppsBackground">
+ 	<item>activity_manager/max_cached_processes=64</item>
+    </string-array>
 </resources>
