@@ -164,6 +164,7 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 vendor.gralloc.disable_ubwc=0
 vendor.opengles.version=196610
+vendor.gralloc.disable_ahardware_buffer=1
 
 # IMS
 persist.dbg.volte_avail_ovr=1
