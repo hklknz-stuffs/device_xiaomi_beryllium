@@ -24,9 +24,6 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-# Default to sanitizing the vendor folder before extraction
-CLEAN_VENDOR=true
-
 KANG=
 SECTION=
 
@@ -68,6 +65,9 @@ function blob_fixup() {
             ;;
         vendor/lib/camera/components/com.qti.node.watermark.so)
             grep -q "libpiex_shim.so" "${2}" || ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
+            ;;
+        vendor/bin/pm-service)
+            grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
     esac
 }
