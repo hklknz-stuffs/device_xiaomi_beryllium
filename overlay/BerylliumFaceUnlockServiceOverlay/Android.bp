@@ -15,5 +15,5 @@
 runtime_resource_overlay {
     name: "BerylliumFaceUnlockServiceOverlay",
     resource_dirs: ["res"],
-    vendor: true,
+    product_specific: true,
 }
