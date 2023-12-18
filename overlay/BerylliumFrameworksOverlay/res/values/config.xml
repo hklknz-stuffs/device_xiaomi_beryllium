@@ -952,4 +952,7 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M -270,0 L -270,86 L 270,86 L 270,0 Z</string>
+    
+    <!-- Whether to enable Lineage Health Service -->
+    <bool name="config_lineageHealthSupported">true</bool>
 </resources>

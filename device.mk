@@ -208,6 +208,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
