@@ -31,6 +31,9 @@ ro.vendor.display.sensortype=2
 # fastbootd
 ro.fastbootd.available=true
 
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 # Graphics
 debug.hwui.target_cpu_time_percent=30
 debug.hwui.use_hint_manager=true
