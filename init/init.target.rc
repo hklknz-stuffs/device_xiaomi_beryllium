@@ -35,3 +35,9 @@ service remosaic_daemon /vendor/bin/remosaic_daemon
     class late_start
     user camera
     group camera
+
+    # Restart qcrild
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    start vendor.qcrild
+    start vendor.qcrild2
