@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2022 The LineageOS Project
+# Copyright (C) 2018-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -303,8 +303,9 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr \
     android.hardware.power@1.2.vendor \
-    android.hardware.power-service.xiaomi-libperfmgr
+    libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -369,6 +370,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/qcom-caf/common/libqti-perfd-client \
+    hardware/xiaomi \
     vendor/qcom/opensource/usb/etc
 
 # Speed profile services and wifi-service to reduce RAM and storage.
