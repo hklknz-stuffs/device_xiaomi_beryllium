@@ -15,8 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/awaken_beryllium.mk
-
-COMMON_LUNCH_CHOICES := \
-    awaken_beryllium-user \
-    awaken_beryllium-userdebug \
-    awaken_beryllium-eng
