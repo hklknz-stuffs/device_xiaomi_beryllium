@@ -16,6 +16,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl:32 \
     audio.r_submix.default \
     audio.usb.default \
+    libaudioroute.vendor \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -139,7 +140,8 @@ $(call inherit-product, vendor/xiaomi/beryllium/beryllium-vendor.mk)
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss@2.1.vendor \
+    libion.vendor
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -158,6 +160,7 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
+    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -344,7 +347,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
     libjson \
-    librmnetctl
+    librmnetctl \
+    libsqlite.vendor:64
 
 # Recovery
 PRODUCT_PACKAGES += \
