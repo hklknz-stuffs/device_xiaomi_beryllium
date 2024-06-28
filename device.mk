@@ -251,7 +251,6 @@ PRODUCT_PACKAGES += \
     BerylliumFrameworksOverlay \
     BerylliumNoCutoutOverlay \
     BerylliumSettingsOverlay \
-    BerylliumSettingsProviderOverlay \
     BerylliumSystemUIOverlay \
     BerylliumTelephonyOverlay \
     TetheringConfigOverlay \
