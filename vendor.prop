@@ -122,6 +122,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display post-processing
 ro.vendor.display.cabl=2
+vendor.display.disable_scaler=0
 vendor.display.enable_default_color_mode=1
 vendor.display.disable_metadata_dynamic_fps=1
 
