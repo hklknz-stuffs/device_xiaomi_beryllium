@@ -249,6 +249,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
+# OEM Unlock reporting
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.oem_unlock_supported=1
+
 # Overlays
 PRODUCT_PACKAGES += \
     BerylliumApertureOverlay \
