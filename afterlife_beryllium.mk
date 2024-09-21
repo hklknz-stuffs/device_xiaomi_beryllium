@@ -7,11 +7,15 @@
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
 # Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+AFTERLIFE_MAINTAINER := lhklknz
+USE_PIXEL_CHARGING := true
+TARGET_SUPPORTS_BLUR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_beryllium
+PRODUCT_NAME := afterlife_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCOPHONE F1
