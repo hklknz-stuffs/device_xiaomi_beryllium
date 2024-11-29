@@ -76,6 +76,8 @@ TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/$(TARGET_KERNEL_CLANG_VERSION)-clang
 TARGET_KERNEL_CONFIG += vendor/xiaomi/mi845_defconfig vendor/xiaomi/beryllium.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
+TARGET_KERNEL_BUILD_HOST := knjtmachine
+TARGET_KERNEL_BUILD_USER := "hklknz"
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
