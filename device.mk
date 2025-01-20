@@ -247,7 +247,6 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 PRODUCT_PACKAGES += \
     BerylliumApertureOverlay \
     BerylliumCarrierConfigOverlay \
-    BerylliumFaceUnlockServiceOverlay \
     BerylliumFrameworksOverlay \
     BerylliumNoCutoutOverlay \
     BerylliumSettingsOverlay \
